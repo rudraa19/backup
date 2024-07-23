@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="style.css">
+    <title>Do it</title>
+</head>
+<body>
+    <header>
+        <h1>To-Do list</h1>
+    </header>
+    <nav>
+        <div class="login">Log out</output></div>
+        <div class="row">
+                <input type="text" id="input-box" placeholder=" Add your tasks">
+                <button onclick="addTask()" style="box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);">Add</button>
+        </div>
+    </nav>
+    <div class="bg">
+
+        <div id="left">
+            <h2>To do</h2>
+            <div class="list" draggable="true">&vellip;&vellip; hello <button onclick="remove(this)">&times;</button></div>
+            <div class="list" draggable="true">
+                <div id="dots">&vellip;&vellip;</div>
+                <div id="text"> this was cs50 thank you for having me </div>
+                <button onclick="remove(this)">&times;</button>
+            </div>
+        </div>
+
+        <div id="middle">
+            <h2>Doing</h2>
+        </div>
+
+        <div id="right">
+            <h2>Done</h2>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

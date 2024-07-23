@@ -1,0 +1,22 @@
+div.content {
+    overflow: auto;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+summary{
+    padding-left: 20px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+summary {
+    cursor: pointer;
+}

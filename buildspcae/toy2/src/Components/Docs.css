@@ -1,0 +1,51 @@
+.article {
+    margin-bottom:10rem;
+}
+
+.post-wrapper {
+    width: 100%;
+}
+
+.code {
+    position: relative;
+}
+
+.code .copy-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 5;
+}
+
+button.icon {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 0.5rem 0 0.5rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.article table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+.article th,
+.article td {
+    border: 1px solid #495057;
+    padding: 8px;
+    text-align: left;
+}
+
+.article th {
+    background-color: #1f1f1f;
+}

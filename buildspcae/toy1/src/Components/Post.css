@@ -1,0 +1,18 @@
+.article {
+    margin-bottom:10rem;
+}
+
+.post-wrapper {
+    width: 100%;
+}
+
+.code {
+    position: relative;
+}
+
+.code .copy-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 5;
+}

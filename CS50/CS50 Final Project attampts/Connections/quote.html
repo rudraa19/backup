@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="CSS/quote.css">
+    <title>Quote Generator</title>
+</head>
+<body>
+    <div class="her">
+        <nav>
+            <h2 class="logo"><a href="index.html">4 in 1 <span>Generator</a></span></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="passwrod.html">Password</a></li>
+                <li><a href="qr.html">QR code</a></li>
+                <li><a href="quote.html">Quote</a></li>
+                <li><a href="text to voice.html">Text to Speech</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
+    <div class="quote-box">
+        <h2>Quote of the day</h2>
+        <blockquote id="quote">Loading...</blockquote>
+        <span id="author">Loading...</span>
+        <div>
+            <button onclick="getquote(api_url)">New Quote</button>
+        </div>
+    </div>
+<script>
+
+    const quote = document.getElementById("quote");
+    const author = document.getElementById("author");    
+    const api_url = "https://api.quotable.io/random"
+    let copytext = null;
+
+    async function getquote(url){
+        const response = await fetch(url);
+        var data = await response.json();
+        quote.innerHTML = data.content;        
+        author.innerHTML = data.author;
+    }
+
+    getquote(api_url);
+
+
+</script>
+</body>
+</html>

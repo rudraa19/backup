@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #2f4050;
+}
+
+.sidebar-list {
+  height: auto;
+  padding: 0;
+  margin: 0;
+  width: 100%; 
+}
+
+.sidebar-list .row {
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+  margin: 0%;
+  display: flex;
+  flex: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.sidebar-list .row:hover {
+  cursor: pointer;
+  background-color: #293846
+}
